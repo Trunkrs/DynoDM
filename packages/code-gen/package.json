@@ -1,7 +1,23 @@
 {
-  "name": "code-gen",
+  "name": "@dynodm/code-gen",
   "version": "0.0.1",
-  "dependencies": {
-    
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "tslint": "^6.1.2"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Trunkrs/DynoDM.git",
+    "directory": "packages/code-gen"
+  },
+  "keywords": [
+    "DynamoDB",
+    "DynoDM",
+    "CLI",
+    "DynoDM-cli"
+  ],
+  "scripts": {
+
   }
 }
