@@ -1,0 +1,34 @@
+name: DynoDM CI/CD
+on: push
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: build node modules
+        run: yarn
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: \**/node_modules
+          key: $GITHUB_SHA
+
+  test:
+    runs-on: ubuntu-latest
+    needs: prepare
+    steps:
+      - id: test
+        run: yarn test
+
+  lint:
+    runs-on: ubuntu-latest
+    needs: prepare
+    steps:
+      - id: lint
+        run: yarn lint
