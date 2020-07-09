@@ -16,13 +16,20 @@ jobs:
         env:
           cache-name: cache-node-modules
         with:
-          path: \**/node_modules
+          path: \**
           key: $GITHUB_SHA
 
   test:
     runs-on: ubuntu-latest
     needs: prepare
     steps:
+      - name: reinstate cache
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: \**
+          key: $GITHUB_SHA
       - id: test
         run: yarn test
 
@@ -30,5 +37,12 @@ jobs:
     runs-on: ubuntu-latest
     needs: prepare
     steps:
+      - name: reinstate cache
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: \**
+          key: $GITHUB_SHA
       - id: lint
         run: yarn lint
