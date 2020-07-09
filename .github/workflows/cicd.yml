@@ -17,7 +17,7 @@ jobs:
           cache-name: cache-node-modules
         with:
           path: \**/node_modules
-          key: ${{env.GITHUB_SHA}}
+          key: ${{ github.sha }}
 
       - name: list dir
         run: ls -l
@@ -33,8 +33,8 @@ jobs:
         env:
           cache-name: cache-node-modules
         with:
-          path: \**
-          key: ${{env.GITHUB_SHA}}
+          path: \**/node_modules
+          key: ${{ github.sha }}
       - name: list dir
         run: ls -l
       - name: test
@@ -44,12 +44,14 @@ jobs:
     runs-on: ubuntu-latest
     needs: prepare
     steps:
+      - name: checkout
+        uses: actions/checkout@v2
       - name: reinstate cache
         uses: actions/cache@v2
         env:
           cache-name: cache-node-modules
         with:
-          path: \**
-          key: $GITHUB_SHA
+          path: \**/node_modules
+          key: ${{ github.sha }}
       - id: lint
         run: yarn lint
