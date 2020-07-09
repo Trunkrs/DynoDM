@@ -1,19 +1,13 @@
 {
   "name": "@dynodm/code-gen",
-  "version": "0.0.1",
+  "version": "0.0.0",
+  "description": "code generator -- converts models into workable typescript",
+  "main": "index.js",
+  "repository": "https://github.com/Trunkrs/DynoDM/tree/master/packages/code-gen",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Trunkrs/DynoDM.git",
-    "directory": "packages/code-gen"
+  "scripts": {
+    "tsc": "tsc"
   },
-  "keywords": [
-    "DynamoDB",
-    "DynoDM",
-    "CLI",
-    "DynoDM-cli"
-  ],
-  "scripts": {},
   "dependencies": {
     "typescript": "^3.9.6"
   }
