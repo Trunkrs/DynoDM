@@ -30,7 +30,9 @@ jobs:
         with:
           path: \**
           key: $GITHUB_SHA
-      - id: test
+      - name: list dir
+        run: ls -l
+      - name: test
         run: yarn test
 
   lint:
