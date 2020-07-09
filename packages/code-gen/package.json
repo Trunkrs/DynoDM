@@ -13,5 +13,8 @@
     "CLI",
     "DynoDM-cli"
   ],
-  "scripts": {}
+  "scripts": {},
+  "dependencies": {
+    "typescript": "^3.9.6"
+  }
 }
