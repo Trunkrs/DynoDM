@@ -2,11 +2,8 @@ module.exports = {
   "parser": "@typescript-eslint/parser",
   "extends": "airbnb-typescript-prettier",
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 2019,
     "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true,
-    },
   },
   "env": {
     "jest": true,
