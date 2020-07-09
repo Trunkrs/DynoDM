@@ -1,10 +1,6 @@
 {
   "name": "@dynodm/code-gen",
   "version": "0.0.1",
-  "devDependencies": {
-    "prettier": "^2.0.5",
-    "tslint": "^6.1.2"
-  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -17,7 +13,5 @@
     "CLI",
     "DynoDM-cli"
   ],
-  "scripts": {
-
-  }
+  "scripts": {}
 }

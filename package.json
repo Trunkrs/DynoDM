@@ -24,5 +24,8 @@
     "lint": "eslint"
   },
   "name": "dynodm",
-  "private": true
+  "private": true,
+  "dependencies": {
+
+  }
 }
