@@ -24,8 +24,8 @@
     "test": "jest --silent --coverage",
     "lint": "eslint"
   },
-  "name": "dynodm",
   "private": true,
+  "name": "dynodm",
   "dependencies": {
 
   }
