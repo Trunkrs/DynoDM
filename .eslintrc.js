@@ -5,6 +5,7 @@ module.exports = {
     ecmaVersion: 5,
     sourceType: 'module',
   },
+  ignorePatterns: ['**/*.d.ts'],
   env: {
     jest: true,
   },
