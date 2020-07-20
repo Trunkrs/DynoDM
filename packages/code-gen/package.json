@@ -12,5 +12,5 @@
     "typescript": "^3.9.6"
   },
   "devDependencies": {
-  }
+  "version": "0.0.1",
 }
