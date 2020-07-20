@@ -1,7 +1,14 @@
 {
-  "name": "code-gen",
-  "version": "0.0.1",
+  "name": "@dynodm/code-gen",
+  "version": "0.0.0",
+  "description": "code generator -- converts models into workable typescript",
+  "main": "index.js",
+  "repository": "https://github.com/Trunkrs/DynoDM/tree/master/packages/code-gen",
+  "license": "MIT",
+  "scripts": {},
   "dependencies": {
-    
+    "typescript": "^3.9.6"
+  },
+  "devDependencies": {
   }
 }

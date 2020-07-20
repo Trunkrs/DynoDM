@@ -1,0 +1,23 @@
+name: CI
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: build node modules
+        run: yarn
+      - name: test
+        run: yarn test
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: build node modules
+        run: yarn
+      - name: test
+        run: yarn lint
