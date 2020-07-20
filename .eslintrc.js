@@ -2,7 +2,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   extends: 'airbnb-typescript-prettier',
   parserOptions: {
-    ecmaVersion: 5,
+    ecmaVersion: 6,
     sourceType: 'module',
   },
   ignorePatterns: ['**/*.d.ts'],
