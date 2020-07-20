@@ -1,4 +1,4 @@
-name: DynoDM CI/CD
+name: CI
 on: push
 
 jobs:
