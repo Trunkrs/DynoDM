@@ -6,7 +6,5 @@
   "workspaces": [],
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "command": {
-    "tsc": "tsc"
-  }
+  "command": {}
 }

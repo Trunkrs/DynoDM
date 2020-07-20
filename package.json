@@ -21,7 +21,8 @@
   },
   "scripts": {
     "test": "jest --silent --coverage",
-    "lint": "eslint"
+    "lint": "eslint",
+    "compile": "tsc"
   },
   "private": true,
   "name": "dynodm",

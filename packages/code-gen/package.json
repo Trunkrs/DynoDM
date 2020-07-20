@@ -5,9 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/Trunkrs/DynoDM/tree/master/packages/code-gen",
   "license": "MIT",
-  "scripts": {
-    "tsc": "tsc"
-  },
+  "scripts": {},
   "dependencies": {
     "typescript": "^3.9.6"
   },
