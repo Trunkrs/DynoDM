@@ -1,0 +1,22 @@
+{
+  "name": "@dynodm/schemas",
+  "version": "0.0.0",
+  "description": "\"schemas -- DynoDM Schema Language schema lexer and parser\"",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Trunkrs/DynoDM/tree/master/packages/schemas"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.24",
+    "ts-node": "^8.10.2"
+  }
+}

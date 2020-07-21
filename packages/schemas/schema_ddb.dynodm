@@ -1,0 +1,17 @@
+datasource dynamodb {
+    provider = 'dynamodb'
+    target = '[arn]'
+}
+
+table Project {
+    name: String
+    id: String      @HashKey @default @whatever
+    isCute: Boolean     @RangeKey
+}
+
+table User {
+    name: String
+    user_name: String   @HashKey
+}
+
+RangeKey: [RowKey, LineKey]
